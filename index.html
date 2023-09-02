@@ -20,24 +20,39 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
     />
+    <link rel="stylesheet" href="styles/style.css" />
 
     <title>Interior Consultant</title>
   </head>
   <body>
     <header>
-      <a href=""></a>
+      <a class="logo" href="">THIS INTERIOR</a>
+      <span class="material-symbols-outlined menu" onclick="menu(this)">
+        menu
+      </span>
+      <span class="material-symbols-outlined close" onclick="cross(this)">
+        close
+      </span>
       <nav>
         <ul>
-          <li>Home</li>
-          <li>Collection</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Collection</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
         </ul>
       </nav>
     </header>
+    <div class="phone-menu hide">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Collection</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
     <main>
       <article>
-        <section>
+        <section class="text-container">
           <div>
             <h1>Modern interior</h1>
             <p>
@@ -50,22 +65,22 @@
             >
           </div>
         </section>
-        <section>
+        <section class="img-container">
           <div>
             <figure>
               <img src="/assets/photo1.png" alt="Drawing room" />
             </figure>
-            <section>
-              <div>
-                <details>
-                  <figure>
-                    <img src="/assets/photo2.png" alt="Profile Picture" />
-                  </figure>
+            <section class="profile-container">
+              <section>
+                <figure>
+                  <img src="./assets/photo2.png" alt="Profile Picture" />
+                </figure>
+                <div>
                   <p>Aliza Webber</p>
                   <small>Interior designer</small>
-                </details>
-                <h3>Designed in 2022 by Aliza Webber</h3>
-              </div>
+                </div>
+              </section>
+              <h3>Designed in 2022 by Aliza Webber</h3>
             </section>
           </div>
         </section>
@@ -80,5 +95,32 @@
         - devChallenges.io</small
       >
     </footer>
+    <script>
+      document.getElementsByClassName("phone-menu")[0].style.display = "none";
+      function menu(x) {
+        x.style.opacity = "0";
+        x.style.transition = "all .1s";
+        document.getElementsByClassName("logo")[0].style.visibility = "hidden";
+        document.getElementsByClassName("phone-menu")[0].style.display =
+          "block";
+        setTimeout(function () {
+          x.style.display = "none";
+          document.getElementsByClassName("close")[0].style.display = "block";
+          document.getElementsByClassName("close")[0].style.opacity = "1";
+        }, 200);
+      }
+      function cross(x) {
+        document.getElementsByClassName("phone-menu")[0].style.display = "none";
+        x.style.opacity = "0";
+        x.style.transition = "all .1s";
+        setTimeout(function () {
+          x.style.display = "none";
+          document.getElementsByClassName("menu")[0].style.display = "block";
+          document.getElementsByClassName("menu")[0].style.opacity = "1";
+          document.getElementsByClassName("logo")[0].style.visibility =
+            "visible";
+        }, 200);
+      }
+    </script>
   </body>
 </html>
