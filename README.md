@@ -36,7 +36,9 @@
 
 ## Overview
 
-![screenshot](./assets/page.jpeg)
+![Desktop](./ss-for-readme/desktop-view.jpeg)
+![Phone](./ss-for-readme/mobile-view.jpeg)
+![Toggle Menu](./ss-for-readme/toggle-menu.jpeg)
 
 <!-- Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
