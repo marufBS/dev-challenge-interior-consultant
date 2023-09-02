@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&family=Lora:wght@500;700&family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* 
+            FONTS
+font-family: 'Crimson Pro', serif;
+font-family: 'Lora', serif;
+font-family: 'Montserrat', sans-serif;
+ */
+
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+}
+
+body {
+  background-color: #181719;
+}
