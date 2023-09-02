@@ -53,6 +53,7 @@
 
 - [HTML5](https://www.w3schools.com/html/)
 - [CSS](https://www.w3schools.com/Css/)
+- [JavaScript](https://www.w3schools.com/js/)
 
 ## Features
 
